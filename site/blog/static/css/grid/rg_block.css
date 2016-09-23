@@ -1,0 +1,29 @@
+section#rg_grid div.block {
+	position: relative;
+	#border: solid 1px black;
+	padding-bottom: 33.3%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+section#rg_grid div.wrap-block-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+
+section#rg_grid div.block-content {
+	height: 100%;
+	border: solid 1px var(--main-border-color);
+}
+
+section#rg_grid div.block-content div.preview {
+	height: 80%;
+}
+
+section#rg_grid div.block-content div.read-more {
+	border-top: solid 1px var(--main-border-color);
+	padding-right: 10px;
+	height: 20%;
+}

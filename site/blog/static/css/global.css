@@ -1,0 +1,7 @@
+:root {
+	--main-bg-color: #F8F8F8;
+	#--main-bg-color: #272780;
+	--main-border-color: #E7E7E7;
+	--main-hover-color: var(--main-border-color);
+	--main-small-color: #777777;
+}

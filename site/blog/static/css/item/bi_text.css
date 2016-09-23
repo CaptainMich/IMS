@@ -1,0 +1,4 @@
+section#sk_content div.container-fluid > div.row > div > p {
+	color: var(--main-small-color);
+	margin-bottom: 20px;
+}

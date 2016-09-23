@@ -1,0 +1,8 @@
+section#bi-photo > div.container-fluid {
+	padding: 0;
+}
+
+section#bi-photo > div.container-fluid > img {
+	width: 100%;
+	height: 55.56vw;
+}

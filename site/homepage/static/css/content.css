@@ -1,0 +1,14 @@
+#sk_content,
+#sk_content > .container-fluid,
+#sk_content > .container-fluid > .row,
+#sk_content > .container-fluid > .row > .col {
+	height: 100%;
+}
+
+#sk_content > .container-fluid > .row > .hidden-xs {
+	height: 100%;
+	background-color: var(--main-bg-color);
+	border-width: 0 1px 0;
+	border-style: solid;
+	border-color: var(--main-border-color);
+}

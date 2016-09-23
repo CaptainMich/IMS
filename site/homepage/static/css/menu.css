@@ -1,0 +1,10 @@
+nav.navbar.navbar-default {
+	margin-bottom: 0;
+	border-bottom-width: 2px;
+	background-color: var(--main-bg-color);
+	border-color: var(--main-border-color);
+}
+
+form.navbar-form.navbar-right {
+	border: 0;
+}
