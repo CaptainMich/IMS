@@ -1,0 +1,10 @@
+section#sk_content div.col-sm-8 {
+	height: 100%;
+}
+
+div#page {
+	position: absolute;
+	bottom: 0px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}

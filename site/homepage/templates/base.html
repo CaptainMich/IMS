@@ -15,7 +15,8 @@
 		<link href="{% static 'css/global.css' %}" rel="stylesheet">
 		<link href="{% static 'css/content.css' %}" rel="stylesheet">
 		<link href="{% static 'css/back_to_top_arrow.css' %}" rel="stylesheet">
-        <link href="{% static 'css/menu.css' %}" rel="stylesheet">
+		<link href="{% static 'css/menu.css' %}" rel="stylesheet">
+		<link href="{% static 'css/pagination.css' %}" rel="stylesheet">
 		
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,9 +31,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
        
-         <!-- Bootstrap Core JavaScript -->
-        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-		
+		 <!-- Bootstrap Core JavaScript -->
+		<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
 		<!-- my scripts -->
 		<script src="{% static 'js/scroll_to_top.js' %}"></script>
 		<!-- end of my scripts -->
@@ -42,7 +43,7 @@
 	<body>
 	
 		{% block menu %}
-        {% endblock %}
+		{% endblock %}
 	
 		<!-- Contents -->
 		<!-- ============================================================================================= -->
@@ -54,10 +55,13 @@
 					<div class="col col-sm-8">
 					
 					{% block content %}
-                    {% endblock %}
+					{% endblock %}
 					
 					</div>
 					<div class="col col-sm-2 hidden-xs"></div>
+					
+					{% block pagination %}
+					{% endblock %}
 				</div>
 			</div>
 		</section>
