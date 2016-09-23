@@ -55,13 +55,9 @@ def post_list(request, tag_slug=None):
                 'posts' : posts,
                 'tag': tag})
 
-def  post_detail(request, year, month, day, post):
+def  post_detail(request, post):
     
-	post = get_object_or_404(Post, slug=post, 
-									status = 'published',
-									publish__year = year,
-									publish__month = month,		
-									publish__day = day)
+	post = get_object_or_404(Post, slug=post)
 
 	# List of the active comments for this post
 	comments = post.comments.filter(active=True)
@@ -82,9 +78,9 @@ def  post_detail(request, year, month, day, post):
 					'comments' : comments,
 					'comment_form': comment_form})
 
-def post_share(request, post_id):
+def post_share(request, post):
     # Retrieve post by id
-    post = get_object_or_404(Post, id=post_id, status='published')
+    post = get_object_or_404(Post, slug=post, status='published')
     sent = False
 
     if request.method == 'POST' :
@@ -101,6 +97,6 @@ def post_share(request, post_id):
     else:
         form = EmailPostForm()
     
-    return render(request, 'blog/post/share.html', {'post' : post,
+    return render(request, 'blog/post_share.html', {'post' : post,
                                                     'form' : form, 
                                                     'sent' : sent})								
