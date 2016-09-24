@@ -29,7 +29,7 @@ class Post(models.Model):
     status = models.CharField(max_length=10,
 							choices = STATUS_CHOICES,
 							default ='draft')
-    image = models.FileField(null = True, blank = True)
+    image = models.FileField(null = True)
 
     class Meta:
         ordering = ('publish',)
