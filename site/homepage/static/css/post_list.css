@@ -16,6 +16,16 @@ section#rg_grid div.block div.preview-title h2 {
 	text-overflow: ellipsis;
 }
 
-section#rg_grid div.block div.preview-content{
+section#rg_grid div.block div.preview-content {
 	margin-top: 10px;
+}
+
+section#rg_grid div.block div.wrap-image {
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+section#rg_grid div.block div.preview-image img {
+	height: 100%;
+	border: solid 1px var(--main-border-color);
 }
